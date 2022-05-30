@@ -8,3 +8,7 @@
   #### [Unreleased]
   #### [1.1.0] - 2022-05-30
   Added Responsive visuals - will be relased on 2022-05-30 9:00PM IST
+
+
+---
+[![](https://visitcount.itsvg.in/api?id=Codeitdoc&label=Profile%20Views&pretty=true)](https://visitcount.itsvg.in)
