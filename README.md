@@ -9,7 +9,7 @@
   #### [v1.1.0] - 2022-05-30  9:00PM IST
  Added Responsiveness to the webpage 
   
-  #### [v1.0.100] - 2022-05-30  9:00PM IST
+  #### [v1.0.100] - 2022-05-28  9:00PM IST
  Added visuals
   
   #### [v1.0.0] - 2022-05-23  11:00PM IST
