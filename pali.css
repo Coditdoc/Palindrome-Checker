@@ -12,12 +12,12 @@ h1{
     color: white;
 }
 .holder{
-    margin-block-start: 10em;
+    margin-block-start: -4em;
     width: 100%;
     max-width: 26rem;
-    height: 28em;
+    height: 46.4em;
     border: 2px solid rgba(255, 51, 153,1);
-    border-radius: 29px;
+    border-radius: 5px;
     display: flex;
     align-items: center;
     overflow: hidden !important;
@@ -25,7 +25,7 @@ h1{
 
 
 #Udt1 {
-    width: 56%;
+    width: 50%;
     height: 2em!important;
     text-align: center;
 }
@@ -66,12 +66,12 @@ span {
     background-size: cover;
     background-color: transparent !important;
      /* background-blend-mode: screen;  */
-    border-radius: 3%;
+    border-radius: 2%;
     position: relative;
     width: 100%;
     height: 54%;
     z-index: 1;
-    top: 123px;
+    top: 166px;
 }
 
 @media screen and (min-width: 600px) {
