@@ -74,6 +74,18 @@ span {
     top: 166px;
 }
 
+@media screen and (max-width:580px) {
+    #udans {
+        margin-top: -62mm;
+    }
+    #Udt1 {
+        width: 44%;
+    }
+    .btn {
+        width: 19%;
+    }
+}
+
 @media screen and (min-width: 600px) {
     .holder{
     margin-block-start: 14em;

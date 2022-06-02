@@ -14,7 +14,7 @@ function tex(){
     console.log(" am i upper", strupr);
     
     
-      let rege = /[a-z0-1]/gi;
+      let rege = /[a-z0-9]/gi;
       let renonalp = strupr.match(rege);
       console.log("removed patterns",renonalp);
     
