@@ -82,7 +82,7 @@
                 top: 166px;
             }
         
-        @media screen and (min-width: 250px) and (max-width: 315px) {
+        @media screen and (min-width: 200px) and (max-width: 315px) {
             h1{
                 margin: 15px;
                 color: white;
