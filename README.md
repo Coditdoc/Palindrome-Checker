@@ -23,4 +23,4 @@
 
 ---
 [![](https://visitcount.itsvg.in/api?id=Codeitdoc&label=Repo%20visites&color=12&pretty=true)](https://visitcount.itsvg.in)
-permalink: /palindrome.html
+
