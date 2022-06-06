@@ -83,13 +83,26 @@
     }
 
     @media screen and (min-width: 250px) and (max-width: 315px) {
-    .holder {
-     margin-top: -101px; 
-     }
-     span {
-     margin-left: 1px;  
-     }  
-     } 
+        h1{
+            margin: 15px;
+            color: white;
+            text-align: center;
+        }
+        .holder {
+         margin-top: -101px; 
+         border: none;
+         }
+         span {
+         margin-left: 1px;  
+         }  
+         } 
+         .bgimg {
+             height: 59%;
+             top: 147px;
+         }
+         #udans {
+             margin-top: -81em;
+         }
 
     @media screen and (max-width:580px) {
         
