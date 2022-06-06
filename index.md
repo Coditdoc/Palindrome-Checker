@@ -81,7 +81,19 @@
         z-index: 1;
         top: 166px;
     }
+
+      @media screen and (min-width: 250px) and (max-width: 315px) {
+                     .holder {
+                 margin-top: -101px;
     
+                     }
+                     span {
+                     margin-left: 1px;
+    
+                     }
+    
+                    } 
+                    
     @media screen and (max-width:580px) {
         
         #udans {
