@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Checker</title>  
+    <style> 
+* {
+    box-sizing: border-box;
+}
+body{
+    background: #333;
+    margin: 0;
+    overflow: hidden !important;
+}
+
+h1{
+    margin: 15px;
+    color: white;
+}
+.holder{
+    margin-block-start: -4em;
+    width: 100%;
+    max-width: 26rem;
+    height: 46.4em;
+    border: 2px solid rgba(255, 51, 153,1);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    overflow: hidden !important;
+}
+
+#Udt1 {
+    width: 50%;
+    height: 2em!important;
+    text-align: center;
+}
+span {
+    color: white;
+    margin-top: 5px;
+    margin-left: 11px;
+}
+.anshold {
+    width: 100%;
+    height: 48px;
+    padding: 10px;
+    position: relative;
+    top: -375px !important;
+    text-align: center;
+    filter: drop-shadow(0 0 10px white);
+    z-index: 1;
+}
+
+#udans{
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 4px;
+}
+
+.btn {
+    width: 16%;
+    height: 2em!important;
+    text-align: center;
+}
+
+.bgimg{
+ background-image: url("data:image/svg+xml,%3Csvg width='100%25' height='100%25' id='svg' viewBox='0 0 1440 700' xmlns='http://www.w3.org/2000/svg' class='transition duration-300 ease-in-out delay-150'%3E%3Cstyle%3E .path-0%7B animation:pathAnim-0 4s%3B animation-timing-function: linear%3B animation-iteration-count: infinite%3B %7D %40keyframes pathAnim-0%7B 0%25%7B d: path('M 0 700 C 0 700 0 233 0 233 C 69.03349282296651 284.17703349282294 138.06698564593302 335.35406698564594 243 314 C 347.933014354067 292.64593301435406 488.76555023923447 198.76076555023923 603 180 C 717.2344497607655 161.23923444976077 804.8708133971292 217.60287081339715 896 239 C 987.1291866028708 260.39712918660285 1081.751196172249 246.82775119617224 1173 240 C 1264.248803827751 233.17224880382776 1352.1244019138755 233.08612440191388 1440 233 C 1440 233 1440 700 1440 700 Z')%3B %7D 25%25%7B d: path('M 0 700 C 0 700 0 233 0 233 C 76.30622009569379 222.6937799043062 152.61244019138758 212.38755980861242 255 194 C 357.3875598086124 175.61244019138758 485.8564593301436 149.14354066985646 599 177 C 712.1435406698564 204.85645933014354 809.9617224880383 287.03827751196167 900 317 C 990.0382775119617 346.96172248803833 1072.2966507177032 324.7033492822967 1161 302 C 1249.7033492822968 279.2966507177033 1344.8516746411483 256.14832535885165 1440 233 C 1440 233 1440 700 1440 700 Z')%3B %7D 50%25%7B d: path('M 0 700 C 0 700 0 233 0 233 C 92.60287081339712 238.0334928229665 185.20574162679424 243.06698564593302 283 250 C 380.79425837320576 256.933014354067 483.77990430622026 265.76555023923447 569 281 C 654.2200956937797 296.23444976076553 721.6746411483252 317.87081339712915 822 287 C 922.3253588516748 256.12918660287085 1055.5215311004783 172.75119617224883 1164 155 C 1272.4784688995217 137.24880382775117 1356.2392344497607 185.1244019138756 1440 233 C 1440 233 1440 700 1440 700 Z')%3B %7D 75%25%7B d: path('M 0 700 C 0 700 0 233 0 233 C 74.41148325358853 281.1626794258373 148.82296650717706 329.32535885167465 255 309 C 361.17703349282294 288.67464114832535 499.11961722488036 199.86124401913875 606 183 C 712.8803827751196 166.13875598086125 788.6985645933014 221.2296650717703 864 226 C 939.3014354066986 230.7703349282297 1014.0861244019138 185.22009569377994 1110 178 C 1205.9138755980862 170.77990430622006 1322.956937799043 201.88995215311002 1440 233 C 1440 233 1440 700 1440 700 Z')%3B %7D 100%25%7B d: path('M 0 700 C 0 700 0 233 0 233 C 69.03349282296651 284.17703349282294 138.06698564593302 335.35406698564594 243 314 C 347.933014354067 292.64593301435406 488.76555023923447 198.76076555023923 603 180 C 717.2344497607655 161.23923444976077 804.8708133971292 217.60287081339715 896 239 C 987.1291866028708 260.39712918660285 1081.751196172249 246.82775119617224 1173 240 C 1264.248803827751 233.17224880382776 1352.1244019138755 233.08612440191388 1440 233 C 1440 233 1440 700 1440 700 Z')%3B %7D %7D%3C/style%3E%3Cdefs%3E%3ClinearGradient id='gradient' x1='0%25' y1='50%25' x2='100%25' y2='50%25'%3E%3Cstop offset='5%25' stop-color='%232f4f4f88'%3E%3C/stop%3E%3Cstop offset='95%25' stop-color='%2332ded488'%3E%3C/stop%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M 0 700 C 0 700 0 233 0 233 C 69.03349282296651 284.17703349282294 138.06698564593302 335.35406698564594 243 314 C 347.933014354067 292.64593301435406 488.76555023923447 198.76076555023923 603 180 C 717.2344497607655 161.23923444976077 804.8708133971292 217.60287081339715 896 239 C 987.1291866028708 260.39712918660285 1081.751196172249 246.82775119617224 1173 240 C 1264.248803827751 233.17224880382776 1352.1244019138755 233.08612440191388 1440 233 C 1440 233 1440 700 1440 700 Z' stroke='none' stroke-width='0' fill='url(%23gradient)' class='transition-all duration-300 ease-in-out delay-150 path-0'%3E%3C/path%3E%3Cstyle%3E .path-1%7B animation:pathAnim-1 4s%3B animation-timing-function: linear%3B animation-iteration-count: infinite%3B %7D %40keyframes pathAnim-1%7B 0%25%7B d: path('M 0 700 C 0 700 0 466 0 466 C 83.05263157894737 483.4162679425837 166.10526315789474 500.83253588516743 271 509 C 375.89473684210526 517.1674641148326 502.6315789473683 516.0861244019139 596 497 C 689.3684210526317 477.91387559808607 749.3684210526318 440.822966507177 843 438 C 936.6315789473682 435.177033492823 1063.8947368421052 466.62200956937806 1169 477 C 1274.1052631578948 487.37799043062194 1357.0526315789475 476.68899521531097 1440 466 C 1440 466 1440 700 1440 700 Z')%3B %7D 25%25%7B d: path('M 0 700 C 0 700 0 466 0 466 C 114.09569377990428 434.9856459330144 228.19138755980856 403.97129186602876 324 407 C 419.80861244019144 410.02870813397124 497.33014354066995 447.1004784688995 581 449 C 664.66985645933 450.8995215311005 754.4880382775118 417.62679425837325 848 424 C 941.5119617224882 430.37320574162675 1038.7177033492824 476.39234449760767 1138 490 C 1237.2822966507176 503.60765550239233 1338.6411483253587 484.8038277511962 1440 466 C 1440 466 1440 700 1440 700 Z')%3B %7D 50%25%7B d: path('M 0 700 C 0 700 0 466 0 466 C 77.50239234449762 491.74162679425837 155.00478468899524 517.4832535885167 266 525 C 376.99521531100476 532.5167464114833 521.4832535885167 521.8086124401914 623 502 C 724.5167464114833 482.1913875598086 783.0622009569377 453.2822966507177 873 456 C 962.9377990430623 458.7177033492823 1084.267942583732 493.06220095693783 1184 500 C 1283.732057416268 506.93779904306217 1361.8660287081339 486.46889952153106 1440 466 C 1440 466 1440 700 1440 700 Z')%3B %7D 75%25%7B d: path('M 0 700 C 0 700 0 466 0 466 C 84.06698564593302 479.28229665071774 168.13397129186603 492.5645933014355 253 511 C 337.86602870813397 529.4354066985645 423.53110047846894 553.0239234449759 537 521 C 650.4688995215311 488.976076555024 791.7416267942583 401.33971291866027 904 380 C 1016.2583732057417 358.66028708133973 1099.5023923444978 403.6172248803828 1184 429 C 1268.4976076555022 454.3827751196172 1354.248803827751 460.1913875598086 1440 466 C 1440 466 1440 700 1440 700 Z')%3B %7D 100%25%7B d: path('M 0 700 C 0 700 0 466 0 466 C 83.05263157894737 483.4162679425837 166.10526315789474 500.83253588516743 271 509 C 375.89473684210526 517.1674641148326 502.6315789473683 516.0861244019139 596 497 C 689.3684210526317 477.91387559808607 749.3684210526318 440.822966507177 843 438 C 936.6315789473682 435.177033492823 1063.8947368421052 466.62200956937806 1169 477 C 1274.1052631578948 487.37799043062194 1357.0526315789475 476.68899521531097 1440 466 C 1440 466 1440 700 1440 700 Z')%3B %7D %7D%3C/style%3E%3Cdefs%3E%3ClinearGradient id='gradient' x1='0%25' y1='50%25' x2='100%25' y2='50%25'%3E%3Cstop offset='5%25' stop-color='%232f4f4fff'%3E%3C/stop%3E%3Cstop offset='95%25' stop-color='%2332ded4ff'%3E%3C/stop%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M 0 700 C 0 700 0 466 0 466 C 83.05263157894737 483.4162679425837 166.10526315789474 500.83253588516743 271 509 C 375.89473684210526 517.1674641148326 502.6315789473683 516.0861244019139 596 497 C 689.3684210526317 477.91387559808607 749.3684210526318 440.822966507177 843 438 C 936.6315789473682 435.177033492823 1063.8947368421052 466.62200956937806 1169 477 C 1274.1052631578948 487.37799043062194 1357.0526315789475 476.68899521531097 1440 466 C 1440 466 1440 700 1440 700 Z' stroke='none' stroke-width='0' fill='url(%23gradient)' class='transition-all duration-300 ease-in-out delay-150 path-1'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent !important;
+     /* background-blend-mode: screen;  */
+    border-radius: 2%;
+    position: relative;
+    width: 100%;
+    height: 54%;
+    z-index: 1;
+    top: 166px;
+}
+
+@media screen and (max-width:580px) {
+    #udans {
+        margin-top: -62mm;
+    }
+    #Udt1 {
+        width: 44%;
+    }
+    .btn {
+        width: 19%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .holder{
+    margin-block-start: 14em;
+    margin-inline-end: auto;
+    margin-inline-start: auto;
+    width: 34em;
+    height: 28em;
+    border-radius: 29px;
+    }
+
+    span {
+        margin-left: 7px;
+    }
+
+    .anshold{
+        width: 23em;
+        margin-inline-end: auto;
+        margin-inline-start: auto;
+        border: none;
+        font: 2em sans-serif;
+        top: -375px !important;
+    }
+}
+
+
+@media screen and (min-width: 1100px) {
+    .holder{
+    margin-block-start: 7em;
+    margin-inline-end: auto;
+    margin-inline-start: auto;
+    width: 54em;
+    height: 37em;
+    max-width: 80rem;
+    border-radius: 128px;
+    }
+    
+    span{
+        margin-left: 45px;
+    }
+    
+    .anshold{
+        width: 23em;
+        margin-inline-end: auto;
+        margin-inline-start: auto;
+        border: none;
+        font: 2em sans-serif;
+        top: -480px !important;
+    }
+    .bgimg{ 
+        top: 134px;
+    }
+
+}
+    </style>
+</head>
+ 
+<body>
+    <h1>Palindrome Checker</h1>
+    
+    <div class="holder">  
+        <div class="bgimg">
+        <span>Type in here-</span>
+        <input type="text" name="textin" label ="textin" id="Udt1" placeholder="Eg-Racecar">
+        <button class="btn" onclick="tex()">Check</button>
+      
+        </div>
+
+    </div>
+
+     <span class="anshold"><p id="udans">  </p>
+         </span>
+    
+    <script>
+    
+const strarr = [];
+let revearr = [];
+let userstr = document.getElementById("Udt1");
+function tex(){
+  console.clear();
+  if(userstr.value == "") {
+    document.getElementById("udans").innerHTML = "haha nice try";
+    console.log("enter text")
+  }
+  else {
+    console.log(" leng",userstr.value.length);
+    let strupr = userstr.value.toUpperCase();
+    console.log(" am i upper", strupr);
+    
+    
+      let rege = /[a-z0-9]/gi;
+      let renonalp = strupr.match(rege);
+      console.log("removed patterns",renonalp);
+    
+    for(let i = 0; i < renonalp.length; i++){
+      strarr.push(renonalp[i]);
+    }
+      
+      console.log("I should be splited",strarr);
+      for(let i = 0; i < strarr.length; i++) {
+        revearr.push(strarr[i]);
+      }
+      revearr.reverse();
+    console.log("I should be reversed",revearr);
+    console.log("res",JSON.stringify(strarr));
+    console.log("Res",JSON.stringify(revearr));
+  if(JSON.stringify(strarr) == JSON.stringify(revearr)) {
+    document.getElementById("udans").innerHTML = "Palindrome";
+    console.log("equal");
+  }
+  else {
+    document.getElementById("udans").innerHTML = "Not a Palindrome";
+    console.log("no");
+    }
+    
+  }
+  console.log();
+  for(let i = 0; i < strarr.length; i++){
+    revearr.pop(strarr[i]);
+  }
+  for(let i = 0; i <userstr.value.length; i++){
+    strarr.pop(userstr[i]);
+  }
+
+}
+</script>
+
+</body>
+
+</html>
