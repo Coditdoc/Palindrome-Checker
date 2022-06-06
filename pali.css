@@ -87,6 +87,15 @@ span {
     }
 }
 
+@media screen and (min-width: 250px) and (max-width: 315px){
+.holder {
+    margin-top: -101px;
+}
+span {
+    margin-left: 1px;
+}
+}
+
 @media screen and (min-width: 600px) {
    
     .holder{
