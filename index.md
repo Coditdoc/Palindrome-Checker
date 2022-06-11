@@ -119,7 +119,7 @@
         @media screen and (min-width: 600px) {
            
             .holder{
-            margin-block-start: 14em;
+            margin-block-start: 4em;
             margin-inline-end: auto;
             margin-inline-start: auto;
             width: 34em;
@@ -149,7 +149,7 @@
         
         @media screen and (min-width: 1100px) {
             .holder{
-            margin-block-start: 7em;
+            margin-block-start: 4em;
             margin-inline-end: auto;
             margin-inline-start: auto;
             width: 54em;
