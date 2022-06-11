@@ -140,6 +140,10 @@
                 font: 2em sans-serif;
                 top: -375px !important;
             }
+            
+            #udans {
+                margin-top: 0em;
+            } 
         }
         
         
@@ -166,10 +170,15 @@
                 font: 2em sans-serif;
                 top: -480px !important;
             }
+            
             .bgimg{ 
                 top: 134px;
             }
-        
+              
+            #udans {
+                margin-top: 0em;
+            } 
+     
         }
     
                 </style>
