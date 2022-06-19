@@ -12,8 +12,6 @@ function tex(){
     console.log(" leng",userstr.value.length);
     let strupr = userstr.value.toUpperCase();
     console.log(" am i upper", strupr);
-    
-    
       let rege = /[a-z0-9]/gi;
       let renonalp = strupr.match(rege);
       console.log("removed patterns",renonalp);
