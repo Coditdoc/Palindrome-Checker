@@ -6,7 +6,7 @@
   It's a  word, phrase, or sequence that reads the same backwards as forwards, e.g. racecar.
   
   ## Upcoming
-  ##### [V2.0] - A new improved and fully responsive UI.
+  ##### [V2.0] - A fully responsive new UI.
 
   ## Changelog
 
