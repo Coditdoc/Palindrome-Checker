@@ -5,9 +5,14 @@
 ## What is Palindrome?
   It's a  word, phrase, or sequence that reads the same backwards as forwards, e.g. racecar.
   
+  ##Upcoming
+  #### [V2.0] - A new improved and fully responsive UI.
+
   ## Changelog
+
   #### [v1.1.100] - 2022-06-2  9:00PM IST
   Fixed some known bugs
+
   #### [v1.1.0] - 2022-05-30  9:00PM IST
  Added Responsiveness to the webpage 
   
