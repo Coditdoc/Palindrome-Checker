@@ -6,7 +6,7 @@
   It's a  word, phrase, or sequence that reads the same backwards as forwards, e.g. racecar.
   
   ## Upcoming
-  ##### [V2.0] - 2022-06-22 9:00PM IST [pre-relase](https://coditdoc.github.io/Palindrome-Checker/)
+  ##### [V2.0] - 2022-06-22 9:00PM IST [Release preview](https://coditdoc.github.io/Palindrome-Checker/)
    A fully responsive new UI.
 
   ## Changelog
