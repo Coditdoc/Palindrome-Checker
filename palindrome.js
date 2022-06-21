@@ -5,7 +5,7 @@ let userstr = document.getElementById("Udt1");
 function tex(){
   console.clear();
   if(userstr.value == "") {
-    document.getElementById("udans").innerHTML = "haha nice try";
+    document.getElementById("udans").innerHTML = "haha nice try :)";
     console.log("enter text")
   }
   else {
