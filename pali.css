@@ -186,7 +186,7 @@
       }
     }
     
-    @media screen and (min-height: 900px) {
+    @media screen and (min-height: 900px) and (min-width: 1570) {
       .holder {
         margin-block-start: 19vh !important;
       }
