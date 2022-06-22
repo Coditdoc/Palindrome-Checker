@@ -7,7 +7,7 @@
   
   ## Upcoming
   ##### [v2.1] - 6-07-22 9:00 IST
-  Clean code with a better logic.
+  Clean code with better logic.
   ## Changelog
   #### [V2.0] - 2022-06-22 9:32PM IST [Release](https://coditdoc.github.io/Palindrome-Checker/)
    A fully responsive new UI.
