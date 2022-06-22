@@ -6,11 +6,12 @@
   It's a  word, phrase, or sequence that reads the same backwards as forwards, e.g. racecar.
   
   ## Upcoming
-  ##### [V2.0] - 2022-06-22 9:00PM IST [Release preview](https://coditdoc.github.io/Palindrome-Checker/)
-   A fully responsive new UI.
-
+  ##### [v2.1] - 6-07-22 9:00 IST
+  Clean code with a better logic.
   ## Changelog
-
+  #### [V2.0] - 2022-06-22 9:32PM IST 
+   A fully responsive new UI.
+   
   #### [v1.1.100] - 2022-06-2  9:00PM IST
   Fixed some known bugs
 
