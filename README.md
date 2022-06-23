@@ -9,6 +9,9 @@
   ##### [v2.1] - 6-07-22 9:00 IST
   Clean code with better logic.
   ## Changelog 
+  #### [v2.0] - 2022-06-23 11:00PM IST 
+  Now Enter keypress also works when text box is selected.
+  
   #### [V2.0] - 2022-06-23 1:50AM IST 
   Fixed mobile viewport bug.
   #### [V2.0] - 2022-06-22 9:32PM IST  [Release](https://coditdoc.github.io/Palindrome-Checker/)
