@@ -4,11 +4,11 @@
     
     userstr.addEventListener("keydown", function (e) {
         if (e.key === "Enter") {
-            validate(e);
+            ente(e);
         }
     });
     
-    function validate(e) {
+    function ente(e) {
         tex()
     }
     
