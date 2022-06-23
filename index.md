@@ -12,7 +12,7 @@
               }
     
     body {
-      background: #333;
+      background: #000000;
       margin: 0;
       overflow: hidden !important;
     }
