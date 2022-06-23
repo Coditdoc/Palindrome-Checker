@@ -6,8 +6,8 @@
   It's a  word, phrase, or sequence that reads the same backwards as forwards, e.g. racecar.
   
   ## Upcoming
-  ##### [v2.1] - 2022-07-6 9:00 IST
-   More better logic.
+  ##### [v2.0] - 2022-06-26 9:00 IST
+   Viewport issue on Ipad will be fixed.
   
   ## Changelog 
   #### [v2.0] - 2022-06-23 11:00PM IST 
