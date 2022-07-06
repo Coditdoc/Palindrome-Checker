@@ -6,10 +6,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Palindrome Checker</title>
+        <link rel="stylesheet" href="pali.css">
         <style>
           *{
-              box-sizing: border-box;
-              }
+      box-sizing: border-box;
+    }
     
     body {
       background: #000000;
@@ -108,7 +109,53 @@
       z-index: -1;
       top: 24em;
     }
+    @media screen and (min-width: 716px) and (max-width :850px){
+      h1 {
+        font-size: 3em;
+      }
+      .bgimg{
+        top: 42em;
+      }
+      .text{
+        top: 0em;
+        left: 2.5em;
+        font-size: 3rem;
+      }
+      #Udt1{
+        margin-top: 19vh !important;
+        min-width: 51vh;
+        height: 4em !important;
+      }
+      .btnholde{
+        left: -32vh;
+        top: 16vh;
+      }
     
+      #arrow{
+        position: absolute;
+        top: 30em;
+        left: 9vh;
+        width: 6em;
+        transform: rotate(50deg);
+      }
+      
+      image{
+        width: 166px;
+      }
+      .anshold{
+        top: -58em !important;
+      }
+    
+      #udans{
+        margin-top: 3em;
+        border-bottom: 2px  solid pink;
+        font-size: 4em;
+        width: 47vh;
+        white-space: nowrap;
+        overflow: hidden !important;
+        visibility: hidden;
+      }
+    }
     @media screen and (min-width: 1100px) {
       .holder {
         margin-block-start: 2em;
@@ -194,8 +241,31 @@
         top: 5em;
       }
     }
+    /* @media screen and (min-height: 820px){
+      .anshold {
+        top: -68vh !important;
+      }
     
-    @media screen and (min-height: 900px) {
+      #udans {
+        margin-top: 3em;
+      }
+      
+      .text {
+        top: -8vh;
+        left: 0em;
+      }
+    
+      #arrow {
+        transform: rotate(10deg);
+        top: -4vh;
+        left: 7em;
+      }
+      .bgimg {
+        top: 63vh;
+      }
+    } */
+    /*
+    @media screen and (min-height: 920px) {
       .holder {
         margin-block-start: 19vh !important;
       }
@@ -216,8 +286,50 @@
         margin-top: 3em;
       }
     }
-        </style>
     
+    */
+    @media screen and (min-width: 900px) and (max-width:950px) {
+      h1{
+        font-size: 3em;
+      }
+      
+      .bgimg{
+        top: 54em;
+      }
+      .text{
+        top: 16vh;
+        left: 2.5em;
+        background: #000000;
+        width: 22%; 
+        font-size: 3em;
+      }
+      #Udt1{
+        margin-top: 32vh;
+        min-width: 46vh;
+        height: 4em !important;
+      }
+      .btnholde{
+        left:-24em;
+        top: 22vh;
+      }
+      image{
+        width: 166px;
+      }
+      .anshold{
+        top: -58vh !important;
+      }
+      #udans{
+        border-bottom: 2px solid pink;
+        font-size: 4em;
+        width: 8em;
+        white-space: nowrap;
+        margin-top: 3em;
+        visibility: hidden;
+      }
+    }
+    
+    
+        </style>
     </head>
     
     <body>
@@ -248,47 +360,46 @@
             <p id="udans"></p>
         </span>
         </div>
-    <script>
-        const strarr = [];
+        <script>
+        
+    const strarr = [];
     let revearr = [];
     let userstr = document.getElementById("Udt1");
     
     userstr.addEventListener("keydown", function (e) {
         if (e.key === "Enter") {
-            ente(e);
+            validate(e);
         }
     });
     
-    function ente(e) {
+    function validate(e) {
         tex()
     }
     
-    
-    
     function tex() {
       console.clear();
+      document.getElementById("udans").style.visibility="visible";
       if (userstr.value == "") {
         document.getElementById("udans").innerHTML = "haha nice try :)";
-        console.log("Hey feed me some text, I'm hungry")
+        console.log("enter text")
       }
-      else {
-        
+      else if (userstr.value.length <= 2) {
+        document.getElementById("udans").innerHTML = "feed me more than 3 words";    
+      }
+    
+      else{
         let strupr = userstr.value.toUpperCase();
-        
         let rege = /[a-z0-9]/gi;
         let renonalp = strupr.match(rege);
-        
     
         for (let i = 0; i < renonalp.length; i++) {
           strarr.push(renonalp[i]);
         }
     
-        
         for (let i = 0; i < strarr.length; i++) {
           revearr.push(strarr[i]);
         }
         revearr.reverse();
-        
         if (JSON.stringify(strarr) == JSON.stringify(revearr)) {
           document.getElementById("udans").innerHTML = "Palindrome";
           console.log("equal");
@@ -308,8 +419,9 @@
       }
     
     }
-    </script>
     
+        </script>
     </body>
     
     </html>
+
