@@ -21,7 +21,7 @@
         console.log("enter text")
       }
       else if (userstr.value.length <= 2) {
-        document.getElementById("udans").innerHTML = "feed me more than 3 words";    
+        document.getElementById("udans").innerHTML = "feed me more than 2 words";    
       }
     
       else{
