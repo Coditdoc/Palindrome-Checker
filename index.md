@@ -229,7 +229,6 @@
       #udans {
         margin-top: 3em;
         font-size: 2em;
-        white-space: nowrap;
         font-size: 2em;
       }
     
