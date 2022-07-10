@@ -230,6 +230,7 @@
         margin-top: 3em;
         font-size: 2em;
         font-size: 2em;
+        white-space: wrap;
       }
     
       .btnholde {
