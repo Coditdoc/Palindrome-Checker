@@ -32,6 +32,10 @@
   #### [v1.0.0] - 2022-05-23  11:00PM IST
  Created Palindrome checker
 
+### PLEASE don't use this code as your project for getting certificate. I figured it out myself so should you.
+
+##Want to contribute?
 
 ---
 [![](https://visitcount.itsvg.in/api?id=Codeitdoc&label=Repo%20visites&color=12&pretty=true)](https://visitcount.itsvg.in)
+

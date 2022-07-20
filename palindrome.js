@@ -1,51 +1,58 @@
-
-const strarr = [];
-let revearr = [];
-let userstr = document.getElementById("Udt1");
-function tex(){
-  console.clear();
-  if(userstr.value == "") {
-    document.getElementById("udans").innerHTML = "haha nice try";
-    console.log("enter text")
-  }
-  else {
-    console.log(" leng",userstr.value.length);
-    let strupr = userstr.value.toUpperCase();
-    console.log(" am i upper", strupr);
+        
+    const strarr = [];
+    let revearr = [];
+    let userstr = document.getElementById("Udt1");
     
+    userstr.addEventListener("keydown", function (e) {
+        if (e.key === "Enter") {
+            validate(e);
+        }
+    });
     
-      let rege = /[a-z0-9]/gi;
-      let renonalp = strupr.match(rege);
-      console.log("removed patterns",renonalp);
-    
-    for(let i = 0; i < renonalp.length; i++){
-      strarr.push(renonalp[i]);
+    function validate(e) {
+        tex()
     }
-      
-      console.log("I should be splited",strarr);
-      for(let i = 0; i < strarr.length; i++) {
-        revearr.push(strarr[i]);
+    
+    function tex() {
+      console.clear();
+      document.getElementById("udans").style.visibility="visible";
+      if (userstr.value == "") {
+        document.getElementById("udans").innerHTML = "haha nice try :)";
+        console.log("enter text")
       }
-      revearr.reverse();
-    console.log("I should be reversed",revearr);
-    console.log("res",JSON.stringify(strarr));
-    console.log("Res",JSON.stringify(revearr));
-  if(JSON.stringify(strarr) == JSON.stringify(revearr)) {
-    document.getElementById("udans").innerHTML = "Palindrome";
-    console.log("equal");
-  }
-  else {
-    document.getElementById("udans").innerHTML = "Not a Palindrome";
-    console.log("no");
-    }
+      else if (userstr.value.length <= 2) {
+        document.getElementById("udans").innerHTML = "Feed me more than 2 words";    
+      }
     
-  }
-  console.log();
-  for(let i = 0; i < strarr.length; i++){
-    revearr.pop(strarr[i]);
-  }
-  for(let i = 0; i <userstr.value.length; i++){
-    strarr.pop(userstr[i]);
-  }
-
-}
+      else{
+        let strupr = userstr.value.toUpperCase();
+        let rege = /[a-z0-9]/gi;
+        let renonalp = strupr.match(rege);
+    
+        for (let i = 0; i < renonalp.length; i++) {
+          strarr.push(renonalp[i]);
+        }
+    
+        for (let i = 0; i < strarr.length; i++) {
+          revearr.push(strarr[i]);
+        }
+        revearr.reverse();
+        if (JSON.stringify(strarr) == JSON.stringify(revearr)) {
+          document.getElementById("udans").innerHTML = "Palindrome";
+          console.log("equal");
+        }
+        else {
+          document.getElementById("udans").innerHTML = "Not a Palindrome";
+          console.log("no");
+        }
+    
+      }
+    
+      for (let i = 0; i < strarr.length; i++) {
+        revearr.pop(strarr[i]);
+      }
+      for (let i = 0; i < userstr.value.length; i++) {
+        strarr.pop(userstr[i]);
+      }
+    
+    }
