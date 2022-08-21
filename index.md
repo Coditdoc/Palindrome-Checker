@@ -360,7 +360,7 @@
             <p id="udans"></p>
         </span>
         </div>
-        [![](https://visitcount.itsvg.in/api?id=coditdoc&label=Website%20visits&color=12&icon=6&pretty=false)](https://visitcount.itsvg.in)
+       
         <script>
         
     const strarr = [];
